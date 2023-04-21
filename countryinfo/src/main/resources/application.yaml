@@ -1,0 +1,13 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api/soap
+
+spring:
+  application:
+    name: countryinfo
+
+country:
+  endpoint:
+    url: http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?wsdl
+
