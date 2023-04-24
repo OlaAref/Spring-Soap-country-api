@@ -46,7 +46,7 @@ Once the application is running, you can use it to retrieve information about co
 You can use any HTTP client, such as `curl` or Postman, to make requests to these endpoints. For example, to retrieve the capital city of Egypt, you can make a GET request to:
 
 ```
-http://localhost:8080/countries/capital/EG
+http://localhost:8080/country/EGY/capital
 
 ```
 
