@@ -38,11 +38,10 @@ This will start the Spring Boot application and make it available at `http://loc
 
 Once the application is running, you can use it to retrieve information about countries via SOAP web services. The following endpoints are available:
 
--   `/countries/all`: Retrieves a list of all countries and their basic information, including ISO code and name.
--   `/countries/capital/{countryCode}`: Retrieves the capital city of the country with the specified ISO code.
--   `/countries/currency/{currencyCode}`: Retrieves a list of countries that use the specified currency, including their ISO codes and names.
--   `/countries/language/{languageCode}`: Retrieves a list of countries that speak the specified language, including their ISO codes and names.
--   `/countries/full/{countryCode}`: Retrieves comprehensive information about the country with the specified ISO code, including its name, capital city, phone code, continent code, currency code, flag image URL, and a list of languages spoken in the country.
+-   `/country/all`: Retrieves a list of all countries and their basic information, including ISO code and name.
+-   `/country/{countryCode}/capital`: Retrieves the capital city of the country with the specified ISO code.
+-   `/country/currency/currency-code/{currencyCode}`: Retrieves a list of countries that use the specified currency, including their ISO codes and names.
+-   `/country/{code}/full/info`: Retrieves comprehensive information about the country with the specified ISO code, including its name, capital city, phone code, continent code, currency code, flag image URL, and a list of languages spoken in the country.
 
 You can use any HTTP client, such as `curl` or Postman, to make requests to these endpoints. For example, to retrieve the capital city of Egypt, you can make a GET request to:
 
